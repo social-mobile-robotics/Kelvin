@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kelvin.HardwareController {
 
-    public enum EngineState { NotReady, Obstructed, Ready }
+    public enum ChasisState {
 
-    public class EngineStateMachine {
-
+        NotReady = 0,
+        Obstructed = 1,
+        Ready = 2,
+        InMove = 4,
+        TurnLeft = 8,
+        TurnRight = 16
     }
 }

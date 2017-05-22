@@ -33,9 +33,16 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChasisState.cs" />
     <Compile Include="ChasisStateMachine.cs" />
-    <Compile Include="EngineStateMachine.cs" />
+    <Compile Include="IO\SerialDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kelvin.Infrastructure\Kelvin.Infrastructure.csproj">
+      <Project>{daa438d5-8b7f-4aa5-a1bc-11245f9c0e01}</Project>
+      <Name>Kelvin.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
